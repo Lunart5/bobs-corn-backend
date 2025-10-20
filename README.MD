@@ -24,12 +24,10 @@ REST API for a corn sales system built with Node.js, Express, PostgreSQL, Redis,
 1. Clone the backend repository
 
 2. Install dependencies:
-\`\`\`bash
-npm install
-\`\`\`
+`npm install`
 
 3. Create a `.env` file in the root:
-\`\`\`env
+`
 # Server
 PORT=3000
 NODE_ENV=development
@@ -42,7 +40,7 @@ REDIS_URL=redis://localhost:6379
 
 # JWT
 JWT_SECRET=your_super_secure_secret_here
-\`\`\`
+`
 
 ## Docker Configuration
 
@@ -52,7 +50,7 @@ Create a `docker-compose.yml` file:
 
 ### Docker Commands
 
-\`\`\`bash
+`
 # Start containers
 docker-compose up -d
 
@@ -64,34 +62,28 @@ docker-compose down
 
 # Stop and remove volumes (deletes data)
 docker-compose down -v
-\`\`\`
+`
 
 
 ### Create Tables
 
-\`\`\`bash
 # Run migrations with Sequelize
-npm run migrate
-\`\`\`
+`npm run migrate`
+
 
 ### Fill Tables
 
-\`\`\`bash
 # Run seeders with Sequelize
-npm run seed
-\`\`\`
-
-
+`npm run seed`
 
 ## Run the Server
 
-\`\`\`bash
 # Development with hot-reload
-npm run dev
+`npm run dev`
 
 # Production
-npm start
-\`\`\`
+`npm start`
+
 
 The server will be available at `http://localhost:3000`
 
